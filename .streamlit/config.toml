@@ -1,2 +1,37 @@
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 10
+maxMessageSize = 10
+
+[browser]
+gatherUsageStats = false
+showErrorDetails = false
+
+[client]
+caching = true
+displayEnabled = true
+toolbarMode = "minimal"
+
 [theme]
 base="light"
+
+[runner]
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+postScriptGC = true
+fastReruns = true
+enforceSerializableSessionState = false
+
+[logger]
+level = "warning"
+messageFormat = "%(asctime)s.%(msecs)03d %(name)s: %(levelname)s: %(message)s"
+
+[global]
+developmentMode = false
+maxCachedMessageAge = 1800
+minCachedMessageSize = 100000
+unitTest = false

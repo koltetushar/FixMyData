@@ -1,6 +1,26 @@
-streamlit>=1.28.0
-pandas>=2.0.0
-numpy>=1.24.0
-plotly>=5.15.0
-scikit-learn>=1.3.0
-scipy>=1.10.0
+# Core Streamlit and data processing
+streamlit==1.28.1
+pandas==2.0.3
+numpy==1.24.3
+
+# Visualization (lightweight versions)
+plotly==5.15.0
+
+# Data processing utilities
+scikit-learn==1.3.0
+
+# Memory optimization
+psutil==5.9.5
+
+# For CSV handling and encoding
+chardet==5.1.0
+
+# Optional: For better performance on Render
+gunicorn==21.2.0
+
+# Keep these minimal for free tier
+# Remove heavy dependencies like:
+# - tensorflow
+# - pytorch 
+# - opencv
+# - large ML libraries

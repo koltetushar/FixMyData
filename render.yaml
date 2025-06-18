@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: fix-my-data
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true --server.enableCORS=false --server.enableXsrfProtection=false
+    envVars:
+      - key: RENDER
+        value: "true"
+      - key: PYTHONUNBUFFERED
+        value: "true"
+    # Free tier specifications
+    plan: free
+    # Health check
+    healthCheckPath: /
+    # Auto-deploy from main branch
+    autoDeploy: true

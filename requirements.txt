@@ -14,13 +14,3 @@ psutil==5.9.5
 
 # For CSV handling and encoding
 chardet==5.1.0
-
-# Optional: For better performance on Render
-gunicorn==21.2.0
-
-# Keep these minimal for free tier
-# Remove heavy dependencies like:
-# - tensorflow
-# - pytorch 
-# - opencv
-# - large ML libraries
